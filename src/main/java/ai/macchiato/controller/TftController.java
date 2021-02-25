@@ -9,23 +9,12 @@ public class TftController {
 
     private int i = 0;//非静态
 
-
     @Autowired
     private TFTCrawler crawler;
-
-    @Autowired
-    private TestClass1 t1;
-
-
-    @Autowired
-    private TestClass2 t2;
-
 
     @RequestMapping("/")
     public String index() {
 
-        System.out.println(t2.test());
-        System.out.println(t1.test());
         return "Greetings from Spring Boot!";
     }
 
